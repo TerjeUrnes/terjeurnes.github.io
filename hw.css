@@ -4,16 +4,22 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: flex-start;
     width: 100vw;
     height: 100vh;
     margin: 5vw;
     font-size: 14px;
     font-weight: bold;
+    color: white;
 }
 
 a {
     text-decoration: none;
+    font-size: 1.2rem;
     color: white;
+}
+
+.d {
+    font-size: 1rem;
 }
