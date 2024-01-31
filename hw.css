@@ -4,9 +4,16 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 100vw;
     height: 100vh;
-    margin: 0;
+    margin: 5vw;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
