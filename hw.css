@@ -25,6 +25,10 @@ a {
     color: white;
 }
 
+a span {
+    display: block;
+}
+
 a img {
     height: 1rem;
     width: auto;
@@ -69,7 +73,7 @@ main {
     transform: translateY(0.4rem);
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
 
     body {
         flex-flow: column nowrap;
@@ -79,7 +83,7 @@ main {
 
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 700px) {
 
     body {
         flex-flow: row nowrap;
