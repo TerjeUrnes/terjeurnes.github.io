@@ -9,38 +9,53 @@ body {
     font-size: 5vw;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-end;
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 5vw;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: white;
+    gap: 3rem
 }
 
 a {
+    display: block;
     text-decoration: none;
-    font-size: 1.2rem;
     color: white;
 }
 
-.d {
-    font-size: 1rem;
+a img {
+    height: 1rem;
+    width: auto;
+    margin-left: 0.6rem;
+    transform: translateY(0.2rem);
 }
 
-#link {
+.link-pages {
+    font-size: 1.5rem;
+}
+
+.link-description {
+    font-size: 1.2rem;
+}
+
+main {
     height: 100%;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
+    flex-flow: column-reverse nowrap;
+    justify-content: flex-start;
     align-items: flex-start;
+    gap: 2rem;
+}
+
+#description {
+    border-top: 1px solid #fff9;
+    padding-top: 1rem;
 }
 
 #hosted {
-    height: 100%;
+    align-self: flex-end;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
@@ -52,4 +67,24 @@ a {
     height: 1.4rem;
     width: auto;
     transform: translateY(0.4rem);
+}
+
+@media only screen and (max-width: 750px) {
+
+    body {
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+}
+
+@media only screen and (min-width: 750px) {
+
+    body {
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
 }
