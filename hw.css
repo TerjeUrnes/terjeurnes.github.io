@@ -59,6 +59,11 @@ main {
     padding-top: 1rem;
 }
 
+#description img {
+    width: 2rem;
+    height: auto;
+}
+
 #hosted {
     align-self: flex-end;
     display: flex;
