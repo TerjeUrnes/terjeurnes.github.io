@@ -10,10 +10,10 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: flex;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
-    padding: 5vw;
-    font-size: 14px;
+    padding: calc(4vw);
+    font-size: 12px;
     font-weight: bold;
     color: white;
     gap: 3rem
@@ -39,7 +39,7 @@ a img {
 }
 
 .link-pages {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
 }
 
 .link-description {
@@ -47,8 +47,7 @@ a img {
 }
 
 main {
-    height: 100%;
-    width: 430px;
+    width: 380px;
     display: flex;
     flex-flow: column-reverse nowrap;
     gap: 2rem;
@@ -57,6 +56,7 @@ main {
 #description {
     border-top: 1px solid #fff9;
     padding-top: 1rem;
+    font-size: 1rem;
 }
 
 #description img {
@@ -70,6 +70,8 @@ main {
     flex-flow: column nowrap;
     gap: 1rem;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
     border-radius: 13px;
 }
 
@@ -79,19 +81,6 @@ main {
     flex-flow: column nowrap;
     background-color: #5f9ea0dd;
     border-top: 2px solid #5f9ea0;
-}
-
-.pages-screenshot {
-    height: 8rem;
-    width: 430px;
-    
-}
-
-.pages-screenshot img {
-    width: 430px;
-    height: 8rem;
-    object-fit: cover;
-    border-radius: 13px;
 }
 
 #hosted {
@@ -120,7 +109,7 @@ main {
     padding: 0rem 0.3rem;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
 
     body {
         flex-flow: column nowrap;
@@ -130,7 +119,7 @@ main {
 
 }
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 700px) {
 
     body {
         flex-flow: row nowrap;
