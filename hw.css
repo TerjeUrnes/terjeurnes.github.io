@@ -17,7 +17,6 @@ body {
     margin: 0;
     font-weight: bold;
     color: white;
-    gap: 3rem
 }
 
 a {
@@ -51,9 +50,15 @@ main {
     font-size: 1rem;
 }
 
-#description img {
-    width: 2rem;
-    height: auto;
+#copyright img {
+    width: auto;
+    height: 1.6rem;
+    transform: translateY(-0.5rem);
+}
+
+#copyright {
+    padding-top: 3rem;
+    font-size: 0.8rem;
 }
 
 .pages-container {
@@ -109,6 +114,7 @@ main {
         align-items: flex-start;
         padding: max(env(safe-area-inset-top), 10px) max(env(safe-area-inset-right), 10px)
         max(env(safe-area-inset-bottom), 10px) max(env(safe-area-inset-left), 10px);
+        gap: 1rem;
     }
 
     main {
@@ -133,6 +139,7 @@ main {
         align-items: flex-start;
         padding: max(env(safe-area-inset-top), 4vw) max(env(safe-area-inset-right), 4vw)
         max(env(safe-area-inset-bottom), 4vw) max(env(safe-area-inset-left), 4vw);
+        gap: 1rem;
     }
 
     main {
@@ -155,6 +162,11 @@ main {
         flex-flow: row nowrap;
         justify-content: space-between;
         align-items: flex-end;
+        gap: 3rem;
+    }
+
+    main {
+        width: 410px;
     }
 
 }
