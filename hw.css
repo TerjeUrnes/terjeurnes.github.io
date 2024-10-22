@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: cadetblue;
+    background-color: #5f9ea0;
     font-size: 5vw;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     display: flex;
@@ -48,6 +48,7 @@ a img {
 
 main {
     height: 100%;
+    width: 430px;
     display: flex;
     flex-flow: column-reverse nowrap;
     gap: 2rem;
@@ -64,30 +65,33 @@ main {
 }
 
 .pages-container {
+    width: 100%;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
+    flex-flow: column nowrap;
     gap: 1rem;
-    overflow-x: hidden;
+    background-size: cover;
+    border-radius: 13px;
 }
 
 .pages-info {
+    padding: 13px;
     display: flex;
     flex-flow: column nowrap;
+    background-color: #5f9ea0dd;
+    border-top: 2px solid #5f9ea0;
 }
 
 .pages-screenshot {
     height: 8rem;
-    width: 10rem;
-    overflow: hidden;
-    border-radius: 13px;
+    width: 430px;
+    
 }
 
 .pages-screenshot img {
-    width: auto;
-    height: 100%;
+    width: 430px;
+    height: 8rem;
     object-fit: cover;
+    border-radius: 13px;
 }
 
 #hosted {
@@ -116,7 +120,7 @@ main {
     padding: 0rem 0.3rem;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 750px) {
 
     body {
         flex-flow: column nowrap;
@@ -126,7 +130,7 @@ main {
 
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 750px) {
 
     body {
         flex-flow: row nowrap;
