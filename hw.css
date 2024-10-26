@@ -57,15 +57,34 @@ main {
     font-size: 1rem;
 }
 
-#copyright img {
-    width: auto;
-    height: 1.6rem;
-    transform: translateY(-0.5rem);
+#description p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+    padding: 0;
+    text-indent: 1rem;
+    line-height: 1.5;
 }
 
 #copyright {
     padding-top: 3rem;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
+}
+
+#copyright img {
+    width: auto;
+    height: 1.7rem;
+    transform: translateY(0.3rem);
+}
+
+#copyright span {
+    font-size: 2rem;
+    color: #fff9;
+    margin: 0 0.5rem;
+}
+
+#copyright-frame {
+    display: flex;
+    flex-flow: row nowrap;
 }
 
 .pages-container {
